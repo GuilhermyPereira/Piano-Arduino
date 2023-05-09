@@ -1,0 +1,52 @@
+// C++ code
+//
+void setup()
+{
+  pinMode(9, OUTPUT);
+  pinMode(1, INPUT);
+  pinMode(2, INPUT);
+  pinMode(3, INPUT);
+  pinMode(4, INPUT);
+  pinMode(5, INPUT);
+  pinMode(6, INPUT);
+  pinMode(7, INPUT);
+  pinMode(8, INPUT);
+}
+
+//ordem tone (PinoOUTPUT, FaixaHzNota, TempoDeExecução)
+
+void loop()
+{
+   if (digitalRead(1) == 1) {
+    tone(9, 262, 100); // play tone 48 (C4 = 262 Hz)
+    delay(50); // Wait for 50 millisecond(s)
+  }
+  if (digitalRead(2) == 1) {
+    tone(9, 294, 100); // play tone 50 (D4 = 294 Hz)
+    delay(50); // Wait for 50 millisecond(s)
+  }
+  if (digitalRead(3) == 1) {
+    tone(9, 330, 100); // play tone 52 (E4 = 330 Hz)
+    delay(50); // Wait for 50 millisecond(s)
+  }
+  if (digitalRead(4) == 1) {
+    tone(9, 349, 100); // play tone 53 (F4 = 349 Hz)
+    delay(50); // Wait for 50 millisecond(s)
+  }
+  if (digitalRead(5) == 1) {
+    tone(9, 392, 100); // play tone 55 (G4 = 392 Hz)
+    delay(50); // Wait for 50 millisecond(s)
+  }
+  if (digitalRead(6) == 1) {
+    tone(9, 440, 100); // play tone 57 (A4 = 440 Hz)
+    delay(50); // Wait for 50 millisecond(s)
+  }
+  if (digitalRead(7) == 1) {
+    tone(9, 486, 100); // play tone 59 (B4 = 494 Hz)
+    delay(50); // Wait for 50 millisecond(s)
+  }
+  if (digitalRead(8) == 1) {
+    tone(9, 523, 100); // play tone 60 (C5 = 523 Hz)
+    delay(50); // Wait for 50 millisecond(s)
+  }
+}
